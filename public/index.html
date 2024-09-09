@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Secrets</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    *{
+    background-color: rgb(15, 13, 13);
+    color: white;
+}
+body{
+    border: 2px solid white;
+    height: 50vh;
+    margin-top: 150px;
+    width: 50vw;
+    margin-left: 350px;
+}
+h2{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+form #password {
+    height: 20px;
+    width: 200px;
+    color: pink;
+    background-color: #ed7187;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 2px solid #f54c4c;
+}
+  </style>
+</head>
+
+<body>
+  <h2>Top Secret</h2>
+  <form action="/check" method="POST">
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" required>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
